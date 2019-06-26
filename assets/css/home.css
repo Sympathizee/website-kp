@@ -1,0 +1,29 @@
+.t-white {
+	color: white;
+}
+
+.h-active:after{
+	content: "";
+	display: block;
+	border-bottom: 2px solid white;
+}
+
+.h-passive:after {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    width: 0%; /* Change this to whatever width you want to have before hover. */
+    border-bottom: 2px solid white; /* This creates the border. Replace black with whatever color you want. */
+    transition: .5s; /* This establishes the amount of time in seconds the animation should take from start to finish */
+}
+
+.h-passive:hover:after {
+    width: 100%; /* This will be the new width of your border when on hover */
+}
+
+nav{
+	position: fixed;
+}
+
+.full{
+	height: 300vh;
+}
