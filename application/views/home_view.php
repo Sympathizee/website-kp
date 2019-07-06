@@ -1,4 +1,17 @@
-
+<!DOCTYPE html>
+<html lang="en" style="background: url(assets/images/BG1.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;">
+<head>
+  <title>BERANDA</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <?php $this->load->view('templates/header'); ?>
+  <?php $this->load->view('templates/navbar'); ?>
+</head>
+<body>
 <style type="text/css">
 body {
   background:transparent !important;
@@ -66,6 +79,7 @@ html{
     </div>
   </div>
 </div>
+</body>
 <script>
 $(document).ready(function() {
   $('#table').DataTable({
