@@ -10,7 +10,6 @@ class home_controller extends CI_Controller {
     public function index() {
         $data['cek'] = 0;
         #$data['recent'] = $this->dbmodel->getRecent();
-        $this->load->view('templates/header');
         $this->load->view('home_view',$data);
     }
 

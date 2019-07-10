@@ -1,4 +1,18 @@
-
+<!DOCTYPE html>
+<html lang="en" style="background: url(assets/images/BG1.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;">
+<head>
+  <title>BERANDA</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <?php $this->load->view('templates/header'); ?>
+  <?php $this->load->view('templates/navbar'); ?>
+</head>
+<body>
+<link rel="stylesheet" href="<?php echo base_url();?>assets/css/home.css">
 <style type="text/css">
 body {
   background:transparent !important;
@@ -23,13 +37,13 @@ html{
   <!--Home 1 END-->
   <div class="row p-0 m-0 snap" style="background-color: rgb(252,247,243);width: 100%;height: 100vh;">
     <div class="container-fluid">
-      <div class="row" style="height: 6vh;"><!--INI HEADBAR BACKGROUND-->
+      <div class="row m-0 p-0" style="height: 6vh;"><!--INI HEADBAR BACKGROUND-->
       </div>
       <div class="row" style="">
         <div class="container my-3 p-0" data-aos="fade-left" data-aos-duration="1500">
           <img src="<?php echo base_url();?>/assets/images/Promo2.1.png" height="300">
         </div>
-        <div class="container py-3" style="background-color: rgb(240,230,222);height: 60vh;" data-aos="fade-right" data-aos-duration="1500">
+        <div class="container py-3" style="background-color: rgb(240,230,222);" data-aos="fade-right" data-aos-duration="1500">
           <h3 style="color:rgb(72,149,119)">Jadwal Keberangkatan Umroh 2019</h3>
           <table id="table" class="table-sm" style="width: 100%;">
             <thead>
@@ -57,15 +71,42 @@ html{
   </div>
   <!-- Home 2 END-->
   <div class="row p-0 m-0 py-5 snap" style="background-color: rgb(252,247,243);width: 100%;height: 100vh;">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="container">
-
+    <div class="container-fluid m-0 p-0">
+      <div class="row" style="height: 80%">
+        <div class="container py-3 my-5" style="background-color: rgb(252,189,120);height: 500px;">
+          <h3 style="color:rgb(72,149,119)">Para Ustadz Pembimbing</h3>
+          <div class="owl-carousel">
+            <div class="pembimbing-container">
+              <div class="pembimbing-img-holder"><img class="pembimbing-img" src="<?php echo base_url();?>assets/images/Test1.jpg"></div>
+              <div class="pembimbing-card"><div class="pembimbing-text">Alvin 1</div></div>
+            </div>
+            <div class="pembimbing-container">
+              <div class="pembimbing-img-holder"><img class="pembimbing-img" src="<?php echo base_url();?>assets/images/Test1.jpg"></div>
+              <div class="pembimbing-card"><div class="pembimbing-text">Alvin 2</div></div>
+            </div>
+            <div class="pembimbing-container">
+              <div class="pembimbing-img-holder"><img class="pembimbing-img" src="<?php echo base_url();?>assets/images/Test1.jpg"></div>
+              <div class="pembimbing-card"><div class="pembimbing-text">Alvin 3</div></div>
+            </div>
+            <div class="pembimbing-container">
+              <div class="pembimbing-img-holder"><img class="pembimbing-img" src="<?php echo base_url();?>assets/images/Test1.jpg"></div>
+              <div class="pembimbing-card"><div class="pembimbing-text">Alvin 4</div></div>
+            </div>
+            <div class="pembimbing-container">
+              <div class="pembimbing-img-holder"><img class="pembimbing-img" src="<?php echo base_url();?>assets/images/Test1.jpg"></div>
+              <div class="pembimbing-card"><div class="pembimbing-text">Alvin 5</div></div>
+            </div>
+          </div>
         </div>
       </div>
+      <?php $this->load->view('templates/footer'); ?>
     </div>
   </div>
+  <!-- Home 3 END-->
 </div>
+</body>
+
+<!--GANTI SESUAI PAGE (beranda,haji,umroh,galeri)-->
 <script>
 $(document).ready(function() {
   $('#table').DataTable({
@@ -74,7 +115,13 @@ $(document).ready(function() {
   });
 });
 $("#beranda").removeClass("h-passive");
+
 $("#beranda").addClass("h-active");
+</script>
+
+
+<!--SCROLLIFY-->
+<script>
 $.scrollify({
   section : ".snap",
   interstitialSection : "",
@@ -93,7 +140,32 @@ $.scrollify({
   afterRender:function() {}
 });
 </script>
+
+
+<!--AOS FADE-->
 <script>
 AOS.init();
 </script>
-<!--GANTI SESUAI PAGE (beranda,haji,umroh,galeri)-->
+
+
+<!--OWL CAROUSEL-->
+<script>
+  var owl = $('.owl-carousel');
+  owl.owlCarousel({
+      loop:true,
+      nav:false,
+      margin:10,
+      autoWidth:true,
+      autoplay:false,
+      autoplayTimeout: 3500,
+      autoplayHoverPause:true
+  })
+  owl.on('mousewheel', '.owl-stage', function(e){
+      if (e.deltaY>0) {
+          //owl.trigger('next.owl');
+      } else {
+          //owl.trigger('prev.owl');
+      }
+      //e.preventDefault();
+  });
+</script>

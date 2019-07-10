@@ -26,3 +26,6 @@
   <!--============================================================================================================-->
   <!--============================================================================================================-->
   <script type="text/javascript" src="<?php echo base_url();?>/assets/js/plugins/jquery.scrollify.js"></script>
+  <link rel="stylesheet" href="<?php echo base_url();?>assets/plugins/owlcarousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="<?php echo base_url();?>assets/plugins/owlcarousel/owl.theme.default.min.css">
+  <script src="<?php echo base_url();?>assets/plugins/owlcarousel/owl.carousel.min.js"></script>
