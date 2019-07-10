@@ -1,6 +1,28 @@
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
 body {
   padding-top: 58px;
-  font-family: 'Roboto', sans-serif;
+  background-color: rgb(252,247,243)!important;
+}
+
+.h-active:after{
+	content: "";
+	display: block;
+	border-bottom: 2px solid white;
+}
+
+.h-passive:after {
+    content: ""; /* This is necessary for the pseudo element to work. */
+    display: block; /* This will put the pseudo element on its own line. */
+    width: 0%; /* Change this to whatever width you want to have before hover. */
+    border-bottom: 2px solid white; /* This creates the border. Replace black with whatever color you want. */
+    transition: .5s; /* This establishes the amount of time in seconds the animation should take from start to finish */
+}
+
+.h-passive:hover:after {
+    width: 100%; /* This will be the new width of your border when on hover */
 }
 
 /* JUDUL SETIAP SECTION */
@@ -102,6 +124,51 @@ td {
   vertical-align: middle!important;
 }
 
+/*SECTION USTADZ PEMBIMBING*/
+.pembimbing-img-holder{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background-color: rgb(252,247,243);
+	position: absolute;
+	z-index: 10;
+  	left: 50%;
+  	top: 35%;
+  	transform: translate(-50%, -50%);
+}
+.pembimbing-img{
+	max-width: 175px;
+	max-height: 175px;
+	border-radius: 50%;
+	z-index: 10;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+.pembimbing-card{
+	height:100%;
+	width: 100%;
+	background-color: rgb(252,247,243);
+	position: absolute;
+  	left: 50%;
+  	top: 85%;
+  	transform: translate(-50%, -50%);
+}
+.pembimbing-container{
+	height: 300px;
+	width: 250px;
+}
+.pembimbing-text{
+	background-color: rgb(252,247,243);
+	position: absolute;
+	color: black;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
 
 /* SECTION SYARAT PENDAFTARAN */
 .syarat {

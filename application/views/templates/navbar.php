@@ -7,15 +7,15 @@
       <ul class="navbar-nav mr-auto" style="margin-left: 50%;
   transform: translateX(-50%);">
         <li class="nav-item" id="beranda" style="margin-right: 5%;">
-          <a class="nav-link t-white " href="#" style="color:white;">BERANDA </a>
+          <a class="nav-link t-white " href="<?=base_url()?>" style="color:white;">BERANDA </a>
         </li>
         <li class="nav-item h-passive" id="haji" style="margin-right: 5%;">
           <div class="mainDiv">
-            <a class="nav-link t-white " href="#" id="haji" style="color:white;">HAJI </a>
+            <a class="nav-link t-white " href="<?=base_url('haji')?>" id="haji" style="color:white;">HAJI </a>
           </div>
         </li>
         <li class="nav-item h-passive" id="umroh" style="margin-right: 5%;">
-          <a class="nav-link t-white " href="#" id="umroh" style="color:white;">UMROH</a>
+          <a class="nav-link t-white " href="<?=base_url('umroh')?>" id="umroh" style="color:white;">UMROH</a>
         </li>
         <li class="nav-item h-passive" id="galeri" style="margin-right: 5%;">
           <a class="nav-link t-white " href="#" id="galeri" style="color:white;">GALERI</a>
