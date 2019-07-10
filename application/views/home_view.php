@@ -71,9 +71,9 @@ html{
   </div>
   <!-- Home 2 END-->
   <div class="row p-0 m-0 py-5 snap" style="background-color: rgb(252,247,243);width: 100%;height: 100vh;">
-    <div class="container-fluid m-0 p-0">
+    <div class="container-fluid m-0 p-0" style="">
       <div class="row" style="height: 80%">
-        <div class="container py-3 my-5" style="background-color: rgb(252,189,120);height: 500px;">
+        <div class="container py-0 my-0 pt-3 mt-5" style="background-color: rgb(252,189,120);height: 55%;">
           <h3 style="color:rgb(72,149,119)">Para Ustadz Pembimbing</h3>
           <div class="owl-carousel">
             <div class="pembimbing-container">
@@ -98,6 +98,9 @@ html{
             </div>
           </div>
         </div>
+        <div class="container py-0 my-0" style="height: 45%;">
+          <!--This is available-->
+        </div>
       </div>
       <?php $this->load->view('templates/footer'); ?>
     </div>
@@ -115,7 +118,6 @@ $(document).ready(function() {
   });
 });
 $("#beranda").removeClass("h-passive");
-
 $("#beranda").addClass("h-active");
 </script>
 

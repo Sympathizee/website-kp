@@ -6,7 +6,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto" style="margin-left: 50%;
   transform: translateX(-50%);">
-        <li class="nav-item" id="beranda" style="margin-right: 5%;">
+        <li class="nav-item h-passive" id="beranda" style="margin-right: 5%;">
           <a class="nav-link t-white " href="<?=base_url()?>" style="color:white;">BERANDA </a>
         </li>
         <li class="nav-item h-passive" id="haji" style="margin-right: 5%;">

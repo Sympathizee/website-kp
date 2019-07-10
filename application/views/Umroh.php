@@ -81,10 +81,7 @@
                 </div>
                 <!-- ///////////////////////////// SECTION USTADZ PEMBIMBING ////////////////////////////-->
                 <section class="UMBING">
-                  <div class="row p-0 m-0snap" style="background-color: rgb(252,247,243);width: 100%;height: 100vh;">
-                    <div class="container-fluid m-0 p-0">
-                      <div class="row" style="height: 80%">
-                        <div class="col py-3" style="background-color: rgb(252,189,120);height: 500px;">
+                        <div class="col py-3" style="background-color: rgb(252,189,120);">
                           <h3 style="color:rgb(72,149,119)">Para Ustadz Pembimbing</h3>
                           <div class="owl-carousel">
                             <div class="pembimbing-container">
@@ -109,9 +106,6 @@
                             </div>
                           </div>
                         </div>
-                      </div>
-                    </div>
-                  </div>
                 </section>
                 <!-- ///////////////////////////// SECTION TESTIMONIAL ////////////////////////////-->
                 <section class="testi">
@@ -168,4 +162,25 @@
       $("#umroh").removeClass("h-passive");
       $("#umroh").addClass("h-active");
     </script>
-    </html>
+    <!--OWL CAROUSEL-->
+    <script>
+      var owl = $('.owl-carousel');
+      owl.owlCarousel({
+          loop:true,
+          nav:false,
+          margin:10,
+          autoWidth:true,
+          autoplay:false,
+          autoplayTimeout: 3500,
+          autoplayHoverPause:true
+      })
+      owl.on('mousewheel', '.owl-stage', function(e){
+          if (e.deltaY>0) {
+              //owl.trigger('next.owl');
+          } else {
+              //owl.trigger('prev.owl');
+          }
+          //e.preventDefault();
+      });
+    </script>
+</html>
