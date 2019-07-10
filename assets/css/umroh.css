@@ -1,0 +1,128 @@
+body {
+  padding-top: 58px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* JUDUL SETIAP SECTION */
+.title {
+  text-align: center;
+}
+
+.title::before {
+  content: '';
+  background-color: rgb(72,149,119);
+  height: 5px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  transform: translateY(49px);
+}
+
+.title::after {
+  content: '';
+  background-color: rgb(72,149,119);
+  height: 10px;
+  width: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  display: block;
+  transform: translateY(8px);
+}
+
+.img-poster {
+  width:100%;
+}
+
+/* SECTION JADWAL KEBERANGKATAN */
+.jadwal {
+  background-color: rgb(240,230,222);
+  text-align: center;
+}
+
+ul.pagination {
+  justify-content: center!important;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #fff;
+  color: gray;
+}
+
+.pagination .page-item .page-link {
+  background-color: Gainsboro;
+  color: Gray;
+}
+
+.pagination .previous.disabled .page-link {
+  background-color: #fff;
+  color: Gray;
+}
+
+.pagination .previous .page-link {
+  background-color: #fff;
+  color: Green;
+}
+
+.pagination .next .page-link {
+  background-color: #fff;
+  color: Green;
+}
+
+.page-item.active .page-link {
+  border-color: Green;
+}
+
+div.dataTables_wrapper div.dataTables_paginate ul.pagination .page-item.active .page-link:focus {
+  background-color: #fff;
+  color: gray;
+}
+
+#table-jadwal {
+  background-color: #fff;
+  width: 100%;
+}
+
+#table-jadwal thead{
+  background-color:rgb(72,149,119);color:white;
+}
+
+#table-jadwal tbody tr td button {
+  background-color: rgb(252,189,120);
+  border-radius: 90px;
+}
+
+tr, th {
+  padding: 10px 0!important;
+}
+
+td {
+  padding: 10px 0!important;
+  vertical-align: middle!important;
+}
+
+
+/* SECTION SYARAT PENDAFTARAN */
+.syarat {
+  color:rgb(72,149,119);
+  display: inline-block;
+}
+
+/* SECTION TESTIMONIAL */
+.testimonial {
+  border-left: 4px solid rgb(72,149,119);
+  margin: 25px 0;
+}
+
+.testimonial img {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+
+.user-details {
+  display: inline-block;
+  font-size: 12px;
+}
